@@ -6,4 +6,4 @@ from django.views.generic.base import View
 class PostView(View):
     def get(self, request):
         posts = Post.objects.all()
-        return render(request, 'posts/index.html', {'post_list': posts})
+        return render(request, 'posts/post.html', {'post_list': posts})
